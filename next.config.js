@@ -1,14 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    reactStrictMode: true, 
-    images: {
-        remotePatterns: [
+  reactStrictMode: true,
+  images: {
+    remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'ik.imagekit.io' 
+        hostname: 'ik.imagekit.io'
       },
+
     ],
-    },
+    domains: ['upload.wikimedia.org']
+  },
 }
 
 module.exports = nextConfig
